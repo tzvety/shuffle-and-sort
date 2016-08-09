@@ -1,0 +1,70 @@
+html {color: #fff;}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {margin: 0.2em 0;background: #ccc;color: #000;padding: 0.2em 0;}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+header {height: 70px;line-height: 70px;text-align: center;border-bottom: 5px solid #a7a7a7;font: 2em 'Lato', Arial, sans-serif;color:#111; }
+span {display: inline-block;vertical-align: middle;line-height: normal;}
+footer {height: 50px;line-height: 50px;text-align: center;font:italic 1em 'Lato', Arial, sans-serif;color:#111;clear: both;}
+
+.cards {width: 70%; float: left; }
+.buttons {width: 30%; float: right; padding-top: 2%;}
+.cards div {float:left; width: 33%; padding-bottom: 30%;position: relative;}
+.cards div div {position:absolute; width: 100%; text-align: center; padding-top: 20%; font-size: 110px; font-size: 10vw;}
+
+.card-1, .card-8 {background: #6f98a8}
+.card-2, .card-4 {background: #2b8ead}
+.card-3, .card-5, .card-9 {background: #2f454e}
+.card-6, .card-7 {background: #bfbfbf}
+
+.card-1 div:before {content: "1"}
+.card-2 div:before {content: "2"}
+.card-3 div:before {content: "3"}
+.card-4 div:before {content: "4"}
+.card-5 div:before {content: "5"}
+.card-6 div:before {content: "6"}
+.card-7 div:before {content: "7"}
+.card-8 div:before {content: "8"}
+.card-9 div:before {content: "9"}
+
+button {
+	position: relative; margin: 3% auto; display: block; width: 80%; padding: 5% 20%; background: #72c3dc;text-transform: uppercase;text-align: center;outline: none;
+	font-size: 1.5vw;
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	border: none;
+	-webkit-box-shadow: 0px 5px 0px #2b8fad;
+	-moz-box-shadow: 0px 5px 0px #2b8fad;
+	box-shadow: 0px 5px 0px #2b8fad;
+}
+button:hover {background: #2b8fad;  transition: all .6s ease-in-out;}
+
+
+
+/* ==========================================================================
+   Mobile classes
+   ========================================================================== */
+@media only screen and (max-width: 420px) {
+
+	header {height: 50px; border-bottom: none;font-size: 1.7em;color:#fff;background: #333 }
+	.cards {width: 100%; float: none; }
+	.buttons {width: 100%; float: none; text-align: center; padding-bottom: 2%}
+
+	.cards div {float:none; width: 88%; padding: 2% 0; margin: 1.5% auto; background: #efefef; color: #111; }
+	.cards > div {border-left-width: 2vw; border-left-style: solid}
+	.cards div div {position:relative; width: 100%; text-align: center; padding: 0; font-size: 5vw;}
+
+	.card-1, .card-8 {border-left-color: #6f98a8;}
+	.card-2, .card-4 {border-left-color: #2b8ead;}
+	.card-3, .card-5, .card-9 {border-left-color: #2f454e;}
+	.card-6, .card-7 {border-left-color: #bfbfbf;}
+
+	button { display: inline-block; margin: 0; width: 30%; padding: 4% ; font-size: 4vw;}
+
+}
